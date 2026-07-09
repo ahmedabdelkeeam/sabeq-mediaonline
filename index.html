@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SABEQ Media | وكالة تسويق إلكتروني ودعاية في مصر</title>
+<meta name="description" content="SABEQ Media وكالة تسويق إلكتروني متخصصة في إدارة السوشيال ميديا، الإعلانات الممولة، تحسين محركات البحث SEO، وصناعة المحتوى لشركات ومحلات مصر. تواصل معنا الآن على واتساب.">
+<meta name="keywords" content="تسويق الكتروني, دعاية واعلان, شركة تسويق, سوشيال ميديا, اعلانات ممولة, SEO, وكالة تسويق مصر">
+<meta property="og:title" content="SABEQ Media | وكالة تسويق إلكتروني">
+<meta property="og:description" content="خليك دايمًا السابق في سوقك — محتوى، إعلانات ممولة، وتحليل بيانات في مكان واحد.">
+<meta property="og:type" content="website">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy-deep:#0A1628;
+    --navy-mid:#0F1F38;
+    --navy-card:#152847;
+    --navy-line:#22385c;
+    --gold:#C9A227;
+    --gold-light:#E8D48A;
+    --off-white:#F2EFE6;
+    --slate:#8B96A8;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--navy-deep);
+    color:var(--off-white);
+    font-family:'Tajawal',sans-serif;
+    line-height:1.75;
+    overflow-x:hidden;
+  }
+  h1,h2,h3,.brand{font-family:'Cairo',sans-serif;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .container{max-width:1120px;margin:0 auto;padding:0 28px;}
+  ::selection{background:var(--gold);color:var(--navy-deep);}
+
+  /* ===== Header ===== */
+  header{
+    position:fixed;top:0;left:0;right:0;z-index:50;
+    background:rgba(10,22,40,0.85);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid rgba(201,162,39,0.15);
+  }
+  .nav-wrap{display:flex;align-items:center;justify-content:space-between;padding:16px 28px;max-width:1120px;margin:0 auto;}
+  .brand{font-weight:900;font-size:22px;letter-spacing:1px;color:var(--off-white);}
+  .brand span{color:var(--gold);}
+  nav ul{list-style:none;display:flex;gap:32px;}
+  nav a{font-size:15px;color:var(--slate);transition:color .25s;}
+  nav a:hover{color:var(--gold-light);}
+  .nav-cta{
+    display:none;
+  }
+  @media(min-width:760px){
+    .nav-cta{display:inline-flex;align-items:center;gap:8px;background:var(--gold);color:var(--navy-deep);
+    padding:10px 20px;border-radius:6px;font-weight:700;font-size:14px;transition:transform .2s, box-shadow .2s;}
+    .nav-cta:hover{transform:translateY(-2px);box-shadow:0 8px 20px rgba(201,162,39,.35);}
+  }
+  @media(max-width:760px){ nav ul{display:none;} }
+
+  /* ===== Hero ===== */
+  .hero{
+    position:relative;
+    min-height:100vh;
+    display:flex;align-items:center;
+    padding:140px 0 80px;
+    overflow:hidden;
+  }
+  .hero-lines{position:absolute;inset:0;z-index:0;opacity:.5;pointer-events:none;}
+  .hero::before{
+    content:"";position:absolute;top:-20%;left:-10%;width:60%;height:70%;
+    background:radial-gradient(circle,rgba(201,162,39,.12) 0%, transparent 70%);
+    z-index:0;
+  }
+  .hero-inner{position:relative;z-index:2;max-width:760px;}
+  .eyebrow{
+    display:inline-flex;align-items:center;gap:10px;
+    color:var(--gold-light);font-size:14px;letter-spacing:2px;
+    font-weight:700;margin-bottom:22px;text-transform:uppercase;
+  }
+  .eyebrow::before{content:"";width:28px;height:2px;background:var(--gold);display:inline-block;}
+  .hero h1{
+    font-size:clamp(34px,6vw,58px);
+    font-weight:900;
+    line-height:1.25;
+    margin-bottom:22px;
+  }
+  .hero h1 .hl{
+    position:relative;
+    color:var(--gold-light);
+    display:inline-block;
+  }
+  .hero h1 .hl svg{
+    position:absolute;bottom:-6px;right:0;width:100%;height:14px;
+  }
+  .hero h1 .hl svg path{
+    stroke:var(--gold);
+    stroke-width:4;
+    fill:none;
+    stroke-linecap:round;
+    stroke-dasharray:300;
+    stroke-dashoffset:300;
+    animation:draw 1.4s ease forwards .6s;
+  }
+  @keyframes draw{to{stroke-dashoffset:0;}}
+  .hero p.lead{
+    font-size:18px;color:var(--slate);max-width:560px;margin-bottom:36px;
+  }
+  .cta-row{display:flex;flex-wrap:wrap;gap:16px;align-items:center;}
+  .btn-primary{
+    display:inline-flex;align-items:center;gap:10px;
+    background:var(--gold);color:var(--navy-deep);
+    font-weight:800;font-size:16px;
+    padding:16px 30px;border-radius:8px;
+    transition:transform .2s, box-shadow .2s;
+    box-shadow:0 10px 30px rgba(201,162,39,.2);
+  }
+  .btn-primary:hover{transform:translateY(-3px);box-shadow:0 14px 34px rgba(201,162,39,.4);}
+  .btn-ghost{
+    display:inline-flex;align-items:center;gap:8px;
+    color:var(--off-white);font-weight:600;font-size:15px;
+    padding:16px 8px;border-bottom:1px solid var(--navy-line);
+    transition:border-color .2s, color .2s;
+  }
+  .btn-ghost:hover{color:var(--gold-light);border-color:var(--gold);}
+
+  /* ===== Section shared ===== */
+  section{padding:110px 0;position:relative;}
+  .sec-head{max-width:640px;margin-bottom:60px;}
+  .sec-eyebrow{color:var(--gold);font-weight:700;font-size:13px;letter-spacing:2px;text-transform:uppercase;margin-bottom:14px;display:block;}
+  .sec-head h2{font-size:clamp(26px,4vw,38px);font-weight:800;line-height:1.4;}
+  .sec-head p{color:var(--slate);margin-top:16px;font-size:16.5px;}
+
+  /* ===== Services ===== */
+  .services-grid{
+    display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px;
+  }
+  .service-card{
+    background:var(--navy-card);
+    border:1px solid var(--navy-line);
+    border-radius:14px;
+    padding:32px 28px;
+    transition:border-color .3s, transform .3s;
+  }
+  .service-card:hover{border-color:var(--gold);transform:translateY(-6px);}
+  .service-icon{
+    width:46px;height:46px;border-radius:10px;
+    background:rgba(201,162,39,.12);
+    display:flex;align-items:center;justify-content:center;
+    margin-bottom:20px;color:var(--gold-light);
+  }
+  .service-card h3{font-size:19px;font-weight:700;margin-bottom:10px;}
+  .service-card p{color:var(--slate);font-size:14.5px;}
+
+  /* ===== Process (real sequence) ===== */
+  .process-wrap{position:relative;}
+  .process-line{
+    position:absolute;top:26px;right:26px;left:26px;height:2px;
+    background:linear-gradient(90deg, var(--gold), rgba(201,162,39,0));
+    display:none;
+  }
+  @media(min-width:900px){.process-line{display:block;}}
+  .process-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:36px;position:relative;}
+  .process-step .num{
+    font-family:'Cairo',sans-serif;font-weight:900;font-size:28px;color:var(--navy-deep);
+    width:52px;height:52px;border-radius:50%;background:var(--gold);
+    display:flex;align-items:center;justify-content:center;margin-bottom:20px;
+    position:relative;z-index:2;
+  }
+  .process-step h3{font-size:18px;font-weight:700;margin-bottom:10px;}
+  .process-step p{color:var(--slate);font-size:14.5px;}
+
+  /* ===== Why us ===== */
+  .why-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2px;background:var(--navy-line);border-radius:14px;overflow:hidden;}
+  .why-item{background:var(--navy-mid);padding:34px 30px;}
+  .why-item h3{font-size:16.5px;font-weight:700;margin-bottom:10px;color:var(--gold-light);}
+  .why-item p{color:var(--slate);font-size:14.5px;}
+
+  /* ===== CTA Band ===== */
+  .cta-band{
+    background:linear-gradient(135deg, var(--navy-card), var(--navy-mid));
+    border:1px solid var(--navy-line);
+    border-radius:20px;
+    padding:60px 40px;
+    text-align:center;
+    position:relative;
+    overflow:hidden;
+  }
+  .cta-band::after{
+    content:"";position:absolute;bottom:-40%;left:-10%;width:60%;height:80%;
+    background:radial-gradient(circle,rgba(201,162,39,.15),transparent 70%);
+  }
+  .cta-band h2{font-size:clamp(24px,4vw,34px);font-weight:800;margin-bottom:16px;position:relative;z-index:1;}
+  .cta-band p{color:var(--slate);max-width:480px;margin:0 auto 30px;position:relative;z-index:1;}
+
+  /* ===== Footer ===== */
+  footer{border-top:1px solid var(--navy-line);padding:44px 0;}
+  .foot-wrap{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:20px;}
+  .foot-wrap .brand{font-size:18px;}
+  footer p{color:var(--slate);font-size:13.5px;}
+
+  /* ===== Floating WhatsApp ===== */
+  .wa-float{
+    position:fixed;bottom:26px;left:26px;z-index:60;
+    width:58px;height:58px;border-radius:50%;
+    background:var(--gold);color:var(--navy-deep);
+    display:flex;align-items:center;justify-content:center;
+    box-shadow:0 10px 26px rgba(201,162,39,.4);
+    transition:transform .25s;
+  }
+  .wa-float:hover{transform:scale(1.08);}
+
+  @media (prefers-reduced-motion: reduce){
+    *{animation:none !important; transition:none !important;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav-wrap">
+    <div class="brand">SABEQ <span>MEDIA</span></div>
+    <nav>
+      <ul>
+        <li><a href="#services">خدماتنا</a></li>
+        <li><a href="#process">طريقة شغلنا</a></li>
+        <li><a href="#why">ليه SABEQ</a></li>
+        <li><a href="#contact">تواصل معنا</a></li>
+      </ul>
+    </nav>
+    <a class="nav-cta" target="_blank" rel="noopener" href="https://wa.me/201067693659?text=%D8%A7%D9%87%D9%84%D8%A7%D9%8B%D8%8C%20%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%A3%D9%83%D8%AA%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20SABEQ%20Media">تواصل واتساب</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-inner">
+    <span class="eyebrow">SABEQ MEDIA — وكالة تسويق إلكتروني</span>
+    <h1>خليك دايمًا <span class="hl">السابق<svg viewBox="0 0 200 14" preserveAspectRatio="none"><path d="M2 8 Q 100 -4 198 8"/></svg></span> في سوقك، مش بس واحد فيه</h1>
+    <p class="lead">بنبني لشركتك حضور رقمي قوي — محتوى، إعلانات ممولة، وتحليل بيانات — يخليكم دايمًا خطوة قدام المنافسين.</p>
+    <div class="cta-row">
+      <a class="btn-primary" target="_blank" rel="noopener" href="https://wa.me/201067693659?text=%D8%A7%D9%87%D9%84%D8%A7%D9%8B%D8%8C%20%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%A3%D9%83%D8%AA%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20SABEQ%20Media">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.28 1.18-1.77 1.24-.45.06-1.02.08-1.65-.1-.38-.11-.87-.28-1.5-.55-2.64-1.14-4.36-3.8-4.5-3.98-.13-.18-1.08-1.43-1.08-2.73s.68-1.93.92-2.2c.24-.26.53-.33.7-.33.18 0 .35 0 .5.01.16.01.38-.06.6.46.22.53.75 1.83.82 1.96.06.13.1.29.02.47-.08.18-.13.29-.25.44-.13.16-.27.35-.38.47-.13.13-.26.27-.11.53.15.26.68 1.12 1.46 1.81 1 .89 1.85 1.17 2.11 1.3.26.13.41.11.56-.07.16-.18.65-.76.83-1.02.18-.26.35-.21.6-.13.24.09 1.55.73 1.82.86.26.13.44.2.5.31.06.13.06.71-.16 1.33z"/></svg>
+        احجز استشارة مجانية على واتساب
+      </a>
+      <a class="btn-ghost" href="#services">شوف خدماتنا ↓</a>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-eyebrow">خدماتنا</span>
+      <h2>كل حاجة عايزها التسويق الإلكتروني لشركتك، في مكان واحد</h2>
+      <p>من الاستراتيجية للتنفيذ، فريقنا بيغطي كل جوانب الحضور الرقمي لعلامتك التجارية.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12h8M12 8v8"/></svg>
+        </div>
+        <h3>إدارة السوشيال ميديا</h3>
+        <p>محتوى يومي، تصميمات، وتفاعل حقيقي بيبني علاقة بين علامتك وجمهورها.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l18-8-8 18-2-8-8-2z"/></svg>
+        </div>
+        <h3>الإعلانات الممولة</h3>
+        <p>حملات مدروسة على فيسبوك وإنستجرام وجوجل، بميزانية محسوبة وعائد واضح.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 8h8v8H8z"/></svg>
+        </div>
+        <h3>الهوية البصرية</h3>
+        <p>لوجو وهوية بصرية متكاملة تخلي علامتك التجارية متعرفة وسط الزحمة.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+        </div>
+        <h3>تحسين محركات البحث SEO</h3>
+        <p>ظهورك الأول لما العميل يدور عليك على جوجل، مش على منافسك.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+        </div>
+        <h3>صناعة المحتوى</h3>
+        <p>فيديوهات، صور، وريلز بتحكي قصة شركتك بطريقة تشد الجمهور.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg>
+        </div>
+        <h3>تحليل البيانات والتقارير</h3>
+        <p>متابعة أسبوعية للأرقام، وتعديل الاستراتيجية بناءً على نتائج حقيقية.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="process">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-eyebrow">طريقة شغلنا</span>
+      <h2>أربع خطوات واضحة، من أول تحليل السوق لحد النتائج</h2>
+    </div>
+    <div class="process-wrap">
+      <div class="process-line"></div>
+      <div class="process-grid">
+        <div class="process-step">
+          <div class="num">01</div>
+          <h3>التحليل</h3>
+          <p>بندرس نشاطك، منافسينك، وجمهورك المستهدف قبل ما نحرك أي خطوة.</p>
+        </div>
+        <div class="process-step">
+          <div class="num">02</div>
+          <h3>الاستراتيجية</h3>
+          <p>بنحط خطة تسويقية واضحة بأهداف قابلة للقياس ومناسبة لميزانيتك.</p>
+        </div>
+        <div class="process-step">
+          <div class="num">03</div>
+          <h3>التنفيذ</h3>
+          <p>بننفذ المحتوى والحملات بجودة عالية وفي مواعيدها المحددة.</p>
+        </div>
+        <div class="process-step">
+          <div class="num">04</div>
+          <h3>التحسين المستمر</h3>
+          <p>بنراجع الأرقام أسبوعيًا ونطور الأداء باستمرار عشان أفضل نتيجة.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="why">
+  <div class="container">
+    <div class="sec-head">
+      <span class="sec-eyebrow">ليه SABEQ Media</span>
+      <h2>شريك تسويقي، مش مجرد مكتب تنفيذ</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item">
+        <h3>فريق متخصص</h3>
+        <p>خبير لكل مجال — سوشيال ميديا، إعلانات، تصميم — مش شخص واحد بيعمل كل حاجة.</p>
+      </div>
+      <div class="why-item">
+        <h3>تقارير شفافة</h3>
+        <p>بتشوف نتائج شغلك بالأرقام أول بأول، من غير كلام عام.</p>
+      </div>
+      <div class="why-item">
+        <h3>تواصل مباشر</h3>
+        <p>رد سريع وواضح على أي استفسار، من غير تعقيد أو بيروقراطية.</p>
+      </div>
+      <div class="why-item">
+        <h3>قرارات مبنية على بيانات</h3>
+        <p>كل خطوة مبنية على تحليل حقيقي للسوق، مش تخمين أو نسخ من المنافسين.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="cta-band">
+      <h2>جاهز تخلي شركتك في الصدارة؟</h2>
+      <p>ابعتلنا رسالة على واتساب دلوقتي، وهنرد عليك بأقرب فرصة نتكلم عن أهداف شركتك.</p>
+      <a class="btn-primary" target="_blank" rel="noopener" href="https://wa.me/201067693659?text=%D8%A7%D9%87%D9%84%D8%A7%D9%8B%D8%8C%20%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%A3%D9%83%D8%AA%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20SABEQ%20Media" style="position:relative;z-index:1;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.28 1.18-1.77 1.24-.45.06-1.02.08-1.65-.1-.38-.11-.87-.28-1.5-.55-2.64-1.14-4.36-3.8-4.5-3.98-.13-.18-1.08-1.43-1.08-2.73s.68-1.93.92-2.2c.24-.26.53-.33.7-.33.18 0 .35 0 .5.01.16.01.38-.06.6.46.22.53.75 1.83.82 1.96.06.13.1.29.02.47-.08.18-.13.29-.25.44-.13.16-.27.35-.38.47-.13.13-.26.27-.11.53.15.26.68 1.12 1.46 1.81 1 .89 1.85 1.17 2.11 1.3.26.13.41.11.56-.07.16-.18.65-.76.83-1.02.18-.26.35-.21.6-.13.24.09 1.55.73 1.82.86.26.13.44.2.5.31.06.13.06.71-.16 1.33z"/></svg>
+        كلمنا على واتساب
+      </a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container foot-wrap">
+    <div class="brand">SABEQ <span style="color:var(--gold)">MEDIA</span></div>
+    <p>© 2026 SABEQ Media. كل الحقوق محفوظة.</p>
+  </div>
+</footer>
+
+<a class="wa-float" target="_blank" rel="noopener" href="https://wa.me/201067693659?text=%D8%A7%D9%87%D9%84%D8%A7%D9%8B%D8%8C%20%D8%B9%D8%A7%D9%8A%D8%B2%20%D8%A3%D8%B9%D8%B1%D9%81%20%D8%A3%D9%83%D8%AA%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%20SABEQ%20Media" aria-label="تواصل عبر واتساب">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.36 5.07L2 22l5.06-1.33A9.94 9.94 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm5.2 14.2c-.22.62-1.28 1.18-1.77 1.24-.45.06-1.02.08-1.65-.1-.38-.11-.87-.28-1.5-.55-2.64-1.14-4.36-3.8-4.5-3.98-.13-.18-1.08-1.43-1.08-2.73s.68-1.93.92-2.2c.24-.26.53-.33.7-.33.18 0 .35 0 .5.01.16.01.38-.06.6.46.22.53.75 1.83.82 1.96.06.13.1.29.02.47-.08.18-.13.29-.25.44-.13.16-.27.35-.38.47-.13.13-.26.27-.11.53.15.26.68 1.12 1.46 1.81 1 .89 1.85 1.17 2.11 1.3.26.13.41.11.56-.07.16-.18.65-.76.83-1.02.18-.26.35-.21.6-.13.24.09 1.55.73 1.82.86.26.13.44.2.5.31.06.13.06.71-.16 1.33z"/></svg>
+</a>
+
+</body>
+</html>
